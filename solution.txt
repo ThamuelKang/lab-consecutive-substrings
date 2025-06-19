@@ -1,2 +1,9 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+Problem: Given a string, generate all possible consecutive substrings by extracting one character at a time and concatenating it with the next, progressively moving the starting index forward each time.
+
+Because the concantination moves linearly and chronologically, we should employ a brute force approach where we move the index chronologically. O(n²) so it will slow exponentially as the string gets longer. Because we need to print all possibility of substrings, brute force is the best approach even if it doesn’t scale well with longer strings. 
+
+If scalability is a concern, we can employ O(n) or sliding window strategy where we locate any duplicative substring so it doesn’t print redundant substrings. 
+

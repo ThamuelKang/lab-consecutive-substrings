@@ -1,8 +1,5 @@
 function consecutiveSubstrings(string) {
   // type your code here
-
-  console.log(string.length)
-
   let wordArray = []
 
   for (let i = 0; i < string.length; i++) {
@@ -11,10 +8,12 @@ function consecutiveSubstrings(string) {
     }
   }
 
-  console.log(wordArray)
+  return wordArray
+
+  // console.log(wordArray)
 }
 
-consecutiveSubstrings("hello")
+// consecutiveSubstrings("hello")
 
 if (require.main === module) {
   // add your own tests in here
